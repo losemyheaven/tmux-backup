@@ -5,7 +5,7 @@ theme=cyan
 theme_file=${git_dir}/tmux-themepack/powerline/block/${theme}.tmuxtheme
 
 usr_tmux_conf=~/.tmux.conf
-cat ${git_dir}/tmux.conf >> ${usr_tmux_conf}
+cat ${git_dir}/tmux.conf > ${usr_tmux_conf}
 echo "source-file ${theme_file}" >> ${usr_tmux_conf}
 
 
